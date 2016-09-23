@@ -1,0 +1,76 @@
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<head>
+	<title>AmiNi:The Amity Alumini</title>
+	<link rel="stylesheet"type="text/css"href="{% static 'css/stylealumini.css' %}"/>
+</head>
+<body>
+<div id="container">
+	<div id="header"><b><strong>THE AMITY YEAR-BOOK</center></b></div>
+	<div id="menu">
+			<ul>
+			<li id="lim"><h3><a href="#intro">HOME</a></h3></li>
+			<li id="lim"><h3><a href="#yearbook">YEAR-BOOK</a></h3></li>
+			<li id="lim"><h3><a href="#team">TEAM</a></h3></li>
+			<li id="lim"><h3><a href="#contact">CONTACT</a></h3></li>
+			<li id="lim"><h3><a href="#" data-toggle="modal" data-target="#register" class="btn btn-blue">REGISTER FOR AmiNi</a></h3></li>
+			</ul>
+	</div>
+<div id="leftcontainer">
+			<div id="Welcomenote">
+			<h1><i>Welcome</i></h1>
+			<p> Welcome AmiNi to the new place</p>
+			</div>
+			<div id="Yearbook">
+			<h1><i>Yearbook</i></h1>
+			<p><pre>Select the year book from the tabs below and download them...!
+			AmiNi Book:2016
+			A download AmiNi book will be available soon..
+			<a href="#" class="btn btn-white-fill expand"><ins>Coming Soon !!</ins></a>
+			</pre>
+			</p>
+			</div>
+			<div id="Team">
+			<h1><i>Team</i></h1>
+			<p><pre>
+			We're a dreamteam!
+			B.Tech CS&E
+			2015-2019
+			Android Developer
+			B.Tech CS&E
+			2015-2019
+			Django/Python Developer
+			</pre></p>
+			<img src="teamimage.jpg" alt="Team Image" style="width:304px;height:228px;">
+			<p><pre>John Philips
+			Personal Trainer
+			</pre></p>
+			</div>
+			<div id="quote">
+			<p><pre><i>To enjoy the glow of good health,you must exercise....</i>
+			#health #training #exercise
+			</pre></p>
+			</div>
+		</div>
+			
+	<div id="news">
+	<h1><marquee>LATEST FEED</marquee></h1>
+	<li>Effort by juniors for seniors</li>
+	<li>Android App coming soon</li>
+	<li>Suggestion Awaited</li>
+	<li>Write to us</li>
+	<li>Precious comments</li>
+	<li>Successful startups</li>
+	<img id="imgpro6" src="news.jpg">
+	</div>
+	<div id="footer">
+	<h1> Hello AmiNi</h1>
+	<form action="" class="input-group form-control" method="POST" action='' enctype='multipart/form-data'>{% csrf_token %}
+		{{ form|crispy }}
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+</body>
+</html>

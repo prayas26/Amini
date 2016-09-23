@@ -1,0 +1,118 @@
+
+body
+{
+		background-color:grey;
+		font-family:verdona;
+		margin-left:0px;
+}
+#container
+{
+	width:1200px;
+	border:1px solid gray;
+	margin:0px auto;
+}
+#header
+{
+	height:100px;
+	background-color:Black;
+	font-size:42px;
+	color:white;
+	text-align:center;
+}
+
+#menu
+{
+	height:50px;
+	background-color:silver;
+	margin-bottom:50px
+	
+}
+ ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#333;
+	color:white;
+	
+}
+#lim
+{
+	float:left;
+	display:inline-block;
+	padding:10px;
+	margin-left:55px;
+	margin-right:55px;
+	margin-bottom:55px;
+	margin-top:35px;
+	text-align:center;
+}
+li a
+{
+	display:block;
+	color:white;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:vertical-align;
+}
+
+#leftcontainer
+{
+	width:900px;
+	background-color:yellow;
+	height:1000px;
+	float:left;
+}
+#Welcomenote
+{
+	width:900px;
+	background-color:CornSilk;
+	height:100px;
+	float:left;
+}
+#Yearbook
+{
+	width:900px;
+	background-color:burlywood;
+	height:200px;
+	float:left;
+}
+
+#Team
+{
+	width:900px;
+	background-color:Darkkhaki;
+	height:600px;
+	float:left;
+}
+#quote
+{
+	width:900px;
+	background-color:coral;
+	height:100px;
+	float:left;
+}
+#footer
+{
+	width:1200px;
+	background-color:IndianRed;
+	height:300px;
+	float:left;
+}
+#news
+{
+	width:300px;
+	background-color:peru;
+	height:1000px;
+	float:right;
+	color:white;
+	
+}
+#imgpro6
+{
+	width:250px;
+	height:500px;
+	margin-left:10px;
+	margin-top:50px;
+}	
